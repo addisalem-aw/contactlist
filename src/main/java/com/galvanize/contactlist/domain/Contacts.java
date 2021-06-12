@@ -15,4 +15,15 @@ public class Contacts {
     private String givenName;
     private String surname;
     private String phoneNumber;
+
+    public Contacts()
+    {
+
+    }
+
+    public Contacts(String givenName, String surname, String phoneNumber) {
+        this.givenName = givenName;
+        this.surname = surname;
+        this.phoneNumber = phoneNumber;
+    }
 }
