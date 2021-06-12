@@ -19,8 +19,11 @@ public class ContactService {
         contactRepository.save(contacts);
     }
 
-    public List<Contacts> findByName(String givenname,String surname)
-    {
-        return  contactRepository.findByName(givenname,surname);
+    public List<Contacts> findByGivenName(String givenName) {
+        return contactRepository.findByGivenName(givenName);
+    }
+
+    public List<Contacts> findByNames(String givenName, String surname) {
+        return contactRepository.findByNames(givenName,surname);
     }
 }

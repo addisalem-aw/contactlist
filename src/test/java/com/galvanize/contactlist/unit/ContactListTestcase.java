@@ -23,7 +23,6 @@ public class ContactListTestcase
     ContactRepository repository;
 
     @Test
-    @DisplayName("testing empty contacts")
     void testEmptyContact() throws Exception
     {
         RequestBuilder request = MockMvcRequestBuilders.get("/contacts")
