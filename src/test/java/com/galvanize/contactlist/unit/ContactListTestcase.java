@@ -31,7 +31,7 @@ public class ContactListTestcase
         this.mvc.perform(request)
                 .andExpect(status().isOk());
     }
-    
+
     @Test
     void testAddContact() throws Exception
     {
